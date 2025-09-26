@@ -44,7 +44,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        margin-left: 75px;
+        margin-left: 70px;
         margin-top: 30px;
         padding: 10px;
         
@@ -52,7 +52,7 @@ body{
       }
       img{
         box-shadow: 5px 5px 20px black;
-        width: 300px;
+        width: 250px;
         padding: 15px;
         border-radius: 15px;
         
@@ -111,7 +111,7 @@ body{
 }
  img{
  box-shadow: 5px 5px 20px black;
- width: 300px;
+ width: 250px;
  padding: 15px;
  border-radius: 15px;
  }
@@ -183,4 +183,35 @@ display: inline-block;
   margin-left: 30px;
   border-bottom: 4px solid orangered;
   width: max-content;
+}
+
+ol.list {
+  list-style: none; /* remove default numbers */
+  counter-reset: item; /* reset counter */
+  padding-left: 0;
+}
+
+ol.list li {
+  counter-increment: item; /* increment counter */
+  margin: 8px 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+ol.list li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #fff;  
+  border-radius: 100px;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;             
+  background: #ff4500;      
+  background-color: rgb(5, 93, 31);
 }
