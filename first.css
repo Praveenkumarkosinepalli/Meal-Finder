@@ -34,12 +34,12 @@ body{
       }
       .icon1{
         gap: 5px;
-        border: 2px solid orangered;
         display: inline;
         padding: 10px;
         border-radius: 50px;
         color: orangered;
         width: 80px;
+      
       }
       #product{
         display: flex;
